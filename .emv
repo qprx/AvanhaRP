@@ -1,0 +1,10 @@
+
+DOMAIN=http:avanha-rp-rmr9.vercel.app
+
+SESSION_SECRET=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+STEAM_API_KEY=65BE48D85BBB6690169851BFC00D1D57
+
+
+
+
+DATABASE_URL="postgresql://neondb_owner:dovgxX2NPVn1@ep-billowing-truth-a2dy2t8t-pooler.eu-central-1.aws.neon.tech/neondb?sslmode=require"
