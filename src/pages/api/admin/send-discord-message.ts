@@ -1,12 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "@/lib/prisma"; // Husk at importere dit prisma-instance
 
-const BOT_TOKEN = "MTMyMzM0Njk1NzQzOTA3NDQwNA.GeYo_D.SCvumFeO4Xx4X-7WWuc8vYYvme0q6Q7aFLy6yE";
+const BOT_TOKEN = "MTM2Mzc5MjExNjYxODM2NzAwNw.G4Ejrh.K3aO4EjccADGrrv_uZJou37DOcWr4OLSZTdmqA";
 const GUILD_ID = "1035588340478652457"; // Server ID
 
-const WHITELIST_WEBHOOK = "https://discord.com/api/webhooks/1327138242629206016/KI_w_u6mXWbK-0FdsI3Fxmh8bi2d_ZVM0GEOBHjb8tSr1EK1YK6clkOBr-a1H7mw9P1e";
-const POLITI_WEBHOOK    = "https://discord.com/api/webhooks/1327138632213200916/i2IgDtj86rFbbYA-dm2QY3Pe95e5EnxUmcxf3uiQruaEzMoxC2HHrz3UOM6qJiTlhqSQ";
-const EMS_WEBHOOK       = "https://discord.com/api/webhooks/1327138967165861919/IK9DV4TW4yr7Yznm7M2xhn5KWfJJd1RP2afCGcQ2VCUUpVZoe9430WwKdU2jq7I3uJwK";
+const WHITELIST_WEBHOOK = "https://discord.com/api/webhooks/1363792687639167026/eqOYodOOcqhM7D5YRucZvWueZHat4EZDXfogyS8XxsvaeiPMn-4ry9f-uGWQEZ5mUwbg";
+const POLITI_WEBHOOK    = "https://discord.com/api/webhooks/1363792689308631251/415UNx24oElT7t6zVUhKHlvvYl-dbeggsz2Pet22azOILPtFyDUrJKbg8M3UZklB4b2E";
+const EMS_WEBHOOK       = "https://discord.com/api/webhooks/1363792690998939738/ma79EC_My6Z9TuKSs1EBQdsKB5xxqa9fm8oTD_rSQrOAKdH0CcsWGsZgeGl2KkiwoaI_";
 
 export default async function handler(
   req: NextApiRequest,
