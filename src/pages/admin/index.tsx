@@ -3,28 +3,6 @@ import router from "@/lib/router";
 import { NextApiRequest, NextApiResponse } from "next";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
-import { getSession } from "next-auth/react";
-import { GetServerSideProps } from "next";
-
-// Server-side auth check
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const session = await getSession(context);
-
-  if (!session || session.user?.role !== "admin") {
-    return {
-      redirect: {
-        destination: '/',
-        permanent: false,
-      },
-    };
-  }
-
-  return {
-    props: {
-      session,
-    },
-  };
-};
 
 interface User {
   id: string;
@@ -32,6 +10,33 @@ interface User {
   displayName: string;
   role: string;
   createdAt: string;
+}
+
+// Whitelist-ansøgning
+interface WhitelistApp {
+  id: string;
+  steamId: string;
+  name: string;
+  age: string;
+  discord: string;
+  rpExperience?: string;
+  characterName: string;
+  characterAge: string;
+  characterBackground: string;
+  rpDuration: string;
+  otherServers?: string;
+  rpInterest: string;
+  scenario1: string;
+  scenario2: string;
+  scenario3: string;
+  ruleAdherence: string;
+  techSetup?: string;
+  serverChoice: string;
+  additionalInfo?: string;
+  rulesRead: boolean;
+  techRequirements: boolean;
+  createdAt: string;
+  status: string;
 }
 
 // Politi-ansøgning
