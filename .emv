@@ -1,12 +1,5 @@
 
-DOMAIN=http:avanha-rp-rmr9.vercel.app
-
-SESSION_SECRET=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
-STEAM_API_KEY=65BE48D85BBB6690169851BFC00D1D57
-
-
-
-
-DATABASE_URL="postgresql://neondb_owner:******@ep-gentle-sun-acml22zn-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require
-"
-
+DOMAIN=https://avanha-rp-iurq-1zlm98p28-qprxs-projects.vercel.app/
+SESSION_SECRET=En hemmelig streng (du kan generere én fx med openssl rand -base64 32 eller bruge
+STEAM_API_KEY=8FDA073F56B4DBB5710848B864FF0E3F
+DATABASE_URL="mysql://root:WvHEnbaHbDxKGUPmlqJfaClKhZtUrerj@<RAILWAY_PRIVATE_DOMAIN>:3306/railway"
