@@ -2,10 +2,10 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "@/lib/prisma"; // Husk at importere dit prisma-instance
 
 const BOT_TOKEN =
-  "MTMyMzM0Njk1NzQzOTA3NDQwNA.GeYo_D.SCvumFeO4Xx4X-7WWuc8vYYvme0q6Q7aFLy6yE";
-const GUILD_ID = "1035588340478652457"; // Server ID
-const WHITELIST_ROLE_ID = "1322996421561159702"; // Rolle ID for whitelist
-const REJECTED_ROLE_ID = "1323344688937173105"; // Rolle ID for afvist
+  "MTM2Mzc5MjExNjYxODM2NzAwNw.G4Ejrh.K3aO4EjccADGrrv_uZJou37DOcWr4OLSZTdmqA";
+const GUILD_ID = "1152354488322105408"; // Server ID
+const WHITELIST_ROLE_ID = "1152354488322105413"; // Rolle ID for whitelist
+const REJECTED_ROLE_ID = "1152354488322105412"; // Rolle ID for afvist
 
 export default async function handler(
   req: NextApiRequest,
