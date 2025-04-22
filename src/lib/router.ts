@@ -16,7 +16,8 @@ export type NextSteamAuthApiRequest = NextApiRequest & { user: SteamProfile };
 const router = nextConnect<NextApiRequest, NextApiResponse>();
 
 router.use(session({
-    secret: process.env.SESSION_SECRET,
+    name: 'session',
+    keys: [process.env.SESSION_SECRET || 'superhemmeligNøgle123'],
     maxAge: 1000 * 60 * 60 * 24 * 30 // 30 days
 }));
 
